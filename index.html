@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <script src="script.js"></script>
     <title>Simple Interest Rate Calculator</title>
     <link rel="stylesheet" href="style.css">
     </head>
@@ -10,32 +9,39 @@
         <div class="main-div">
             <h1>Simple Interest Calculator</h1>
 
-            Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="number"  id="rate">  <br/>
-            No. of Years <input type="text" list="list_years" id="years"> 
-            <datalist id="list_years">
-                <option value="1"></option>
-                <option value="2"></option>
-                <option value="3"></option>
-                <option value="4"></option>
-                <option value="5"></option>
-                <option value="6"></option>
-                <option value="7"></option>
-                <option value="8"></option>
-                <option value="9"></option>
-                <option value="10"></option>
-            </datalist>
-            
-            <br/>
-            Interest :  <input type="range" min="1" max="20" value="10.25" step="0.25" class="slider" id="interest"><span>10.25%</span>
+            <div class="forms">
 
-            <br><span id="result"></span><br>
-    
-            <button onclick="compute()">Compute Interest</button>
+                Amount <input type="text" id="principal">  <br/>
+           
+                Interest :  <input type="range" min="1" max="20" value="10.25" step="0.25" class="slider" id="interest">
+                <span class="interest-disp">10.25%</span><br/>
+
+                No. of Years <input type="text" list="list-years" id="years"> 
+                <datalist id="list-years">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+            
+                <br><span id="result"></span><br>
+        
+                <button onclick="compute()">Compute Interest</button>
+
+            </div>
+
+            
         </div>
       
         <footer>
             &copy; Everyone Can Get Rich
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
